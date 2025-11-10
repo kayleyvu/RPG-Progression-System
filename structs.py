@@ -70,7 +70,34 @@ class Player:
 
 
 class Inputs:
-    combat_chance: float
+    class Parameters:
+        MaxLevel: int = 20
+        BaseXPPerLevel: int = 100
+        XPExponent: float = 1.35
+        GoldPerCombatStep: int = 25
+        GoldPerNonCombatStep: int = 10
+        CombatChance: float = 0.6
+        DeathChance: float = 0.08
+        RepairCostPct: float = 0.05
+        RespecChanceCombat: float = 0.03
+        RespecBaseCost: float = 100
+        RespecLevelMult: int = 10
+        VendorTaxPct: float = 0.1
+        ZoneTier: int = 1
+        BaseXP_Combat: int = 12
+        BaseXP_NonCombat: int = 10
+        SkillDiff_TierMult: int = 5
+        SkillDiff_StDev: int = 2
+        TimePerStep_Min: int = 3
+        DeathSeverity: float = 0.5
+        RepairCostPerZone: float = 0.4
+        StepCount: int = 20
+        RunID: int = 1
+        Seed: int = 1
+        BaseRecommendedGear: int = 100
+        GearGrowthPerZone: float = 1.08
+        ZoneScale: int = 5
+        GearStatScaling: int = 15
 
 
 class World:
