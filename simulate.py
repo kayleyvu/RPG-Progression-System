@@ -17,13 +17,13 @@ def non_combat(player: structs.Player):
     pass
 
 
-def simulate(turns: int, inputs: structs.Inputs):
-    player = structs.Player()
-    world = story.create_world()
+def simulate(turns: int, inputs: structs.Inputs, worlds: list[structs.World]):
+    player = structs.Player() # initializes a new player
+    world = worlds[0] # sets the world to the first world in the list for now
 
     for turn in range(turns):
         # decide action
-        if utils.chance(inputs.combat_chance):
+        if utils.chance(inputs.parameters.CombatChance):
             combat(player, world)
         else:
             non_combat(player)
@@ -32,4 +32,4 @@ def simulate(turns: int, inputs: structs.Inputs):
         story.progress_story(turn, world)
 
         # record results
-        log.record_turn(turn, player)
+        log.record_turn(turn, player, world)

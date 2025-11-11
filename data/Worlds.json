@@ -1,0 +1,74 @@
+[
+  {
+    "BeatNum": 1,
+    "Stage": "Ordinary World",
+    "BeatName": "Village Under the Ancient Hill",
+    "BeatStartStep (editable)": 1,
+    "ZoneLevel": 60,
+    "BeatDC": 10
+  },
+  {
+    "BeatNum": 2,
+    "Stage": "Call to Adventure",
+    "BeatName": "The Omen at the Skyfall Stone",
+    "BeatStartStep (editable)": 15,
+    "ZoneLevel": 70,
+    "BeatDC": 10
+  },
+  {
+    "BeatNum": 3,
+    "Stage": "Mentor",
+    "BeatName": "The Wanderer at the Bridge",
+    "BeatStartStep (editable)": 30,
+    "ZoneLevel": 85,
+    "BeatDC": 10
+  },
+  {
+    "BeatNum": 4,
+    "Stage": "Threshold",
+    "BeatName": "Forest Gate Opens",
+    "BeatStartStep (editable)": 45,
+    "ZoneLevel": 100,
+    "BeatDC": 11
+  },
+  {
+    "BeatNum": 5,
+    "Stage": "Trials",
+    "BeatName": "Whispering Pines",
+    "BeatStartStep (editable)": 60,
+    "ZoneLevel": 120,
+    "BeatDC": 11
+  },
+  {
+    "BeatNum": 6,
+    "Stage": "Ordeal",
+    "BeatName": "Moonless Grove Ambush",
+    "BeatStartStep (editable)": 90,
+    "ZoneLevel": 145,
+    "BeatDC": 11
+  },
+  {
+    "BeatNum": 7,
+    "Stage": "Revelation",
+    "BeatName": "Rune Beneath the Roots",
+    "BeatStartStep (editable)": 120,
+    "ZoneLevel": 170,
+    "BeatDC": 12
+  },
+  {
+    "BeatNum": 8,
+    "Stage": "Transformation",
+    "BeatName": "Mistfire Shrine Oath",
+    "BeatStartStep (editable)": 150,
+    "ZoneLevel": 200,
+    "BeatDC": 12
+  },
+  {
+    "BeatNum": 9,
+    "Stage": "Return",
+    "BeatName": "Home Beneath Changed Stars",
+    "BeatStartStep (editable)": 180,
+    "ZoneLevel": 230,
+    "BeatDC": 13
+  }
+]

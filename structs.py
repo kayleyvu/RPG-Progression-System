@@ -69,7 +69,9 @@ class Player:
         self.equipment.equip_best(self._loot)
 
 
-class Inputs:
+class Inputs: 
+# This looks like a lot but it's basically just the Inputs json converted to a class
+# Cuz its tm work to hardcode all the parameters in Python
     class Parameters:
         MaxLevel: int = 20
         BaseXPPerLevel: int = 100
@@ -245,3 +247,14 @@ class World:
     BeatStartStep: int
     ZoneLevel: int
     BeatDC: int
+
+    def __init__(self, data:dict = {}) -> None: # Basic init with default values if no data provided
+        self.BeatNum = data.get('BeatNum', 1)
+        self.Stage = data.get('Stage', "Beginning")
+        self.BeatName = data.get('BeatName', "The First Step")
+        self.BeatStartStep = data.get('BeatStartStep', 0)
+        self.ZoneLevel = data.get('ZoneLevel', 1)
+        self.BeatDC = data.get('BeatDC', 1)
+    
+    def __str__(self) -> str:
+        return f"World(BeatNum={self.BeatNum}, Stage={self.Stage}, BeatName={self.BeatName}, BeatStartStep={self.BeatStartStep}, ZoneLevel={self.ZoneLevel}, BeatDC={self.BeatDC})"
